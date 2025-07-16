@@ -5,6 +5,8 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 import torchvision.transforms as T
 
+
+
 # === 1. 构造可配对的图像列表 ===
 def build_file_lists(rgb_dir, nrg_dir, train_ratio=0.8):
     rgb_files = [f.replace("RGB_", "") for f in os.listdir(rgb_dir) if f.startswith("RGB_")]
